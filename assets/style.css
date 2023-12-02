@@ -26,7 +26,7 @@ body{
   right: -4.7%;
 }
 header {
-  position: fixed;
+  position: relative;
   top: 0;
   right: 0;
   width: 100%;
@@ -35,7 +35,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2.7rem 2rem;
-  background-color: rgb(255, 255, 255);
+  background-color: hsla(0, 0%, 100%, 0.978);
   height: 5rem;
 }
 .navbar {
@@ -45,10 +45,15 @@ header {
 .navbar li a {
   color: #331B3B;
   padding-right: 2rem;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 23.97px;
   transition: .6s;
+}
+.navbar li .active{
+  font-weight: 700;
+  text-decoration: underline #FDC221 2px;
+  text-underline-offset: 2px;
 }
 .navbar li a:hover{
   font-weight: 700;
@@ -66,17 +71,34 @@ header {
   margin-right: 25px;
   margin-left: 10px;
   font-size: 1.2rem;
-  border: solid #331B3B 2px;
+  border: none;
   width: 2.5rem;
   height: 2.5rem;
   background: transparent;
   text-align: center;
-  border-radius: 78% 50% 85% 64% / 100% 60% 88% 66% ;
   transition: .6s;
+}
+.main-btns .fb-btn i{
+  position: relative;
+  top: -2.8rem;
+  left: 0.1rem;
+}
+.main-btns .linkedin-btn i{
+  position: relative;
+  top: 2.2rem;
+  left: 0.1rem
+}
+.main-btns .linkedin-btn svg{
+  position: relative;
+  top: -2.2rem;
+}
+.main-btns .insta-btn i{
+  position: relative;
+  top: -2.85rem;
+  left: 0.15rem;
 }
 .main-btns button:hover{
   cursor: pointer;
-  border: solid #FDC221 2px;
 }
 .main-btns button i:hover{
   color: #FDC221;
@@ -116,9 +138,19 @@ header {
 .hero-content h1 b{
   font-weight: 700;
 }
+/* .hero-content .yellow-line{
+  position: relative;
+  top: -2rem;
+  width: auto;
+  height: 1rem;
+  background: #FDC221;
+  z-index: -1;
+} */
 .hero-content .yellow-uline{
-  text-decoration: underline yellow 2rem;
-  text-underline-offset: 1px;
+  position: relative;
+  background-color: #FDC221;
+  back
+  
 }
 .our-works-heading-box .yellow-uline,
 .about-content .yellow-uline,
@@ -207,31 +239,37 @@ header {
 .our-work-third-info-box{
   position: relative;
   margin: auto;
-  width: 308px;
+  max-width: 308px;
   height: 192px;
   background-color: #ffffff;
+  box-shadow: 0px 0px 9px 2px #0000000D;
 }
 .our-work-first-info-box svg,
 .our-work-second-info-box svg,
 .our-work-third-info-box svg{
   position: relative;
   top: 10%;
-  left: 6%;
-  background-color: rgb(238, 213, 223);
+  left: 7%;
   width: 2.6rem;
   height: 2.5rem;
   padding: 0.3rem;
   border-radius: 7px;
 }
+.our-work-first-info-box svg{
+  background: #FFDED4;
+}
+.our-work-second-info-box svg{
+  background: #FFEED4;
+}
 .our-work-third-info-box svg{
-  background-color: rgb(196, 230, 227);
+  background: #D4F0FF;
 }
 .our-work-first-info-box h2,
 .our-work-second-info-box h2,
 .our-work-third-info-box h2{
   position: relative;
   top: 13%;
-  left: 6%;
+  padding-left: 1.5rem;
   color: #331B3B;
   font-size: 16px;
   font-style: normal;
@@ -245,7 +283,7 @@ header {
 .our-work-third-info-box p{
   position: relative;
   top: 18%;
-  left: 6%;
+  padding-left: 1.5rem;
   color: rgba(51, 27, 59, 0.66);
   font-size: 15px;
   font-weight: 300;
@@ -306,6 +344,7 @@ header {
 }
 .about-content{
   position: relative;
+  max-width: 27.18rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -389,6 +428,8 @@ margin: auto;
 width: 419px;
 height: 365px;
 background-color: #ffffff;
+box-shadow: 0px 0px 9px 2px #0000000D;
+
 }
 .recent-work-main-box-first-child-box button:hover,
 .recent-work-main-box-second-child-box button:hover{
