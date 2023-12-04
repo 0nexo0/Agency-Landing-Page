@@ -1,63 +1,79 @@
 @media (max-width: 1012px) {
     #menu-icon {
         position: relative;
-        top: -2.5rem;
-        left: 13.5rem;
         display: block;
+        margin: auto;
     }
-  
     .main-btns {
-        position: relative;
-        top: 1rem;
+        position: relative; 
     }
-  
     .navbar {
-        position: absolute;
-        top: 80%;
-        right: -100%;
-        width: 13rem;
-        height: 29vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 15rem;
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        background-color: rgb(246, 237, 116);
+        background-color: #FFC47E;
         justify-content: flex-start;
-        border-radius: 12px;
-        transition: all .5s ease;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        transition: all .6s ease;
+        padding-top: 7rem;
+        z-index: 999;
     }
-  
     .navbar a {
         display: block;
         margin: 0.8rem 0;
         padding: 0 1.3rem;
-        transition: all .5s ease;
+        border-bottom: solid hsla(0, 0%, 0%, 0.238) 1px;
+        padding-bottom: 1rem;
+        transition: all .6s ease;
     }
-  
+    .logo-li{
+        display: block;
+        position: relative;
+        top: -5rem;
+        color: #331B3B;
+        font-size: 24px;
+        font-size: 700;
+        line-height: 28.13px;
+    }
     .navbar a:hover {
         font-weight: 700;
-        transform: translateY(10px);
     }
-  
     .navbar.open {
-        right: 2%;
+        left: 0;
+        transition: ease-in-out .6s;
+    }
+    .carosule-btns{
+        position: relative;
+        top: -0.2rem;
+        left: 1rem;
+    }
+    .recent-works-container{
+        width: 500px;
+        height: auto;
     }
   }
-  
 @media(max-width: 1258px){
     .hero-content h1{
         font-size: 4rem;
         line-height: 4rem;
     }
-    .recent-work-heading{
-        flex-direction: column;
+    .hero-content .yellow-uline::after{
+        top: 5.8rem;
     }
-    .recent-work-heading h2{
-        font-size: 2.5rem;
-        text-align: center;
-        left: 3.5rem;
+    .main-shape{
+        top: -15.5rem;
+        width: 407.54px;
+        height: 669.82px;
     }
-    .recent-work-heading p{
-        top: 1.5rem;
-        text-align: center;
+    .recent-work-yellow-uline::after{
+        top: 1rem;
+        width: 13%;
+        left: 14rem;
     }
 }
 @media(max-width: 1202px){
@@ -70,12 +86,11 @@
     .our-work-third-info-box{
         display: none;
     }
-    .carosule-btn-01,
-    .carosule-btn-02,
-    .recent-work-carosule-btn-01,
-    .recent-work-carosule-btn-02{
-        right: 21rem;
-        top: -8rem;
+    .recent-work-yellow-uline::after{
+        top: 4rem;
+        width: 15%;
+        left: 12.5rem;
+        height: 10%;
     }
 }
 @media(max-width: 1088px){
@@ -85,17 +100,22 @@
     .about-img{
         width: 30rem;
     }
-    .recent-work-main-box-second-child-box{
-        display: none;
-    }
-    .footer-map-img{
-        width: 20rem;
-    }
     .main-shape{
         width: 23rem;
         height: 33rem;
         top: -10rem;
         right: -3.95rem;
+    }
+    .main-shape{
+        top: -15.5rem;
+        width: 407.54px;
+        height: 609.82px;
+    }
+    .recent-work-yellow-uline::after{
+        top: 4rem;
+        width: 17%;
+        left: 11.5rem;
+        height: 10%;
     }
 }
 @media(max-width: 1002px){
@@ -109,11 +129,22 @@
     .about-img{
         width: 25rem;
     }
-    .main-shape{
-        width: 20rem;
-        height: 30rem;
-        top: -10rem;
-        right: -3.95rem;
+    .footer-container{
+        flex-direction: column;
+    }
+    .hero-content .yellow-uline::after{
+        top: 5rem;
+      }
+      .main-shape{
+        top: -15.2rem;
+        width: 407.54px;
+        height: 569.82px;
+    }
+    .recent-work-yellow-uline::after{
+        top: 4rem;
+        width: 17%;
+        left: 11.5rem;
+        height: 10%;
     }
 }
 @media(max-width: 928px){
@@ -130,33 +161,47 @@
     .about-content h1{
         font-size: 2.8rem;
     }
-    #footer-section{
+    .recent-work-heading{
         flex-direction: column;
-        height: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
     }
-    .footer-section-first-box{
-        top: 2rem;
+    .recent-work-heading h2{
+        text-align: center;
     }
-    .footer-section-second-box{
-       margin-top: 3.5rem;
-       left: -2.8rem;
-    }
-    .footer-map-img{
-        width: 24rem;
+    .recent-work-heading p{
+        text-align: center;
+        font-size: 0.8rem;
+        width: auto;
+        padding: 0 1rem;
     }
     .testimonials-main-box{
         flex-direction: column;
     }
     .main-shape{
-        width: 17rem;
-        height: 29rem;
-        top: -10rem;
-        right: -3.95rem;
+        top: -15.2rem;
+        width: 407.54px;
+        height: 569.82px;
+    }
+    .about-yellow-uline::after{
+        left: 9.7rem;
+    }
+    .recent-work-yellow-uline::after{
+        top: 3.5rem;
+        width: 18%;
+        left: 25rem;
+        height: 10%;
     }
 }
 @media(max-width: 876px){
     #hero-section{
         flex-direction: column;
+        position: relative;
+    }
+    .hero-content{
+        justify-content: center;
+        align-items: center;
     }
     .hero-content h1{
         text-align: center;
@@ -166,10 +211,6 @@
     .hero-content p{
         text-align: center;
         font-size: 1.2rem;
-    }
-    .hero-content button{
-        position: relative;
-        left: 10.6rem;
     }
     .hero-img{
         top: 2rem;
@@ -196,6 +237,9 @@
     #about-section{
         flex-direction: column;
     }
+    .about-content{
+        align-items: center;
+    }
     .about-img{
         width: 36rem;
     }
@@ -208,36 +252,47 @@
         text-align: center;
         font-size: 1.2rem;
     }
-    .about-content button{
-        position: relative;
-        left: 10.6rem;
-    }
     .recent-work-heading h2{
-        left: -2.5rem;
-    }
-    .recent-work-heading p{
         left: -2.5rem;
     }
     .main-shape{
         width: 37rem;
         height: 67rem;
-        top: -10rem;
+        top: -15.2rem;
         right: -8.6rem;
     }
+    .hero-content .yellow-uline::after{
+        top: 5.8rem;
+        left: 4.8rem;
+      }
+      .about-yellow-uline::after{
+        width: 30%;
+        top: 3.7rem;
+        left: 14rem;
+    }
+    .recent-work-yellow-uline::after{
+        top: 3.5rem;
+        width: 19%;
+        left: 22.6rem;
+        height: 10%;
+    }
 }
-@media(max-width: 658px){
+    @media(max-width: 759px){
+        .recent-work-yellow-uline::after{
+            top: 3.5rem;
+            width: 25.5%;
+            left: 18.6rem;
+            height: 10%;
+        }
+    }
+    @media(max-width: 658px){
     .hero-content h1{
-        text-align: center;
         font-size: 3rem;
         line-height: 3rem;
     }
     .hero-content p{
         text-align: center;
         font-size: 1rem;
-    }
-    .hero-content button{
-        position: relative;
-        left: 8rem;
     }
     .hero-img-01{
        width: 28rem;
@@ -246,17 +301,11 @@
         width: 28rem;
     }
     .about-content h1{
-        text-align: center;
         font-size: 3rem;
         line-height: 3rem;
     }
     .about-content p{
-        text-align: center;
         font-size: 1rem;
-    }
-    .about-content button{
-        position: relative;
-        left: 8rem;
     }
     .testimonials-heading h1{
         font-size: 2.4rem;
@@ -264,26 +313,29 @@
     .main-shape{
         width: 33rem;
         height: 58rem;
-        top: -10rem;
+        top: -15.2rem;
         right: -5.4rem;
     }
-    .main-btns{
-        position: relative;
-        width: 70%;
+    .recent-works-container{
+        width: 410px;
+        height: auto;
     }
-    .recent-work-carosule-btn-01{
-        top: -1rem;
-        left: 1rem;
+    .hero-content .yellow-uline::after{
+        top: 4.4rem;
+        left: 3.6rem;
+      }
+      .about-yellow-uline::after{
+        top: 3rem;
+        left: 10.4rem;
     }
-    .recent-work-carosule-btn-02{
-        top: -1rem;
-        left: 1rem;
-    }
-}
-@media(max-width: 567px){
-    .main-btns{
-        position: relative;
-        width: 100%;
+    .-test-sec-yellow-uline::after{
+        left: 22rem;
+    } 
+    .recent-work-yellow-uline::after{
+        top: 3.5rem;
+        width: 25.5%;
+        left: 16.6rem;
+        height: 10%;
     }
 }
 @media(max-width: 555px){
@@ -295,10 +347,6 @@
     .hero-content p{
         text-align: center;
         font-size: 0.8rem;
-    }
-    .hero-content button{
-        position: relative;
-        left: 5rem;
     }
     .hero-img-01{
        position: relative;
@@ -320,10 +368,6 @@
         text-align: center;
         font-size: 0.8rem;
     }
-    .about-content button{
-        position: relative;
-        left: 5rem;
-    }
     .testimonials-heading h1{
         font-size: 2.4rem;
     }
@@ -332,66 +376,82 @@
         line-height: 2.3rem;
         left: -1rem;
     }
-    .recent-work-heading p{
-        font-size: 0.8rem;
-        left: -1rem;
-    }
-    .recent-work-main-box-first-child-box{
-        width: 380px;
-        height: 355;
-        right: 1rem;
-    }
-    .recent-work-01-web{
-        width: 15rem;
-    }
-    .recent-work-main-box-first-child-box button{
-        position: relative;
-        left: 16.5rem;
+    .recent-works-container{
+        width: 410px;
+        height: auto;
     }
     .testimonials-heading h1{
         font-size: 2.1rem;
         line-height: 2.1rem;
     }
-    .footer-section-first-box h1{
-        text-align: center;
-        font-size: 2.1rem;
-    }
-    .footer-section-first-box p{
-        text-align: center;
-        font-size: 0.8rem;
-    }
-    .footer-section-first-box h3{
-        text-align: center;
-    }
-    .footer-section-first-box input{
-        width: 13rem;
-    }
-    .footer-map-img{
-        position: relative;
-        width: 20rem;
-        left: 0.8rem;
-    }
-    .main-btns{
-        position: relative;
-        width: 100%;
-    }
     .main-shape{
         width: 30rem;
         height: 52rem;
-        top: -10rem;
+        top: -15.2rem;
         right: -5.4rem;
+    }
+    .hero-content .yellow-uline::after{
+        top: 3.6rem;
+        left: 3rem;
+      }
+      .our-work-yellow-uline::after{
+        top: 2.6rem;
+        left: 9.5rem;
+      }
+      .about-yellow-uline::after{
+        top: 2.3rem;
+        left: 8.7rem;
+    }
+    .-test-sec-yellow-uline::after{
+        left: 19.5rem;
+    } 
+    .recent-work-yellow-uline::after{
+        top: 2rem;
+        width: 25.5%;
+        left: 14.6rem;
+        height: 10%;
     }
 }
 @media(max-width: 542px){
     .main-btns button{
-        margin: auto;
-        font-size: 1rem;
-        width: 2.5rem;
-        height: 2.5rem;
+        position: relative;
+        left: -4rem;
       }
     #menu-icon{
         position: relative;
-        left: 11rem;
+        left: -2rem;
+    }
+    .footer-container{
+        width: auto;
+        align-items: center;
+    }
+    .footer-section-first-box{
+        width: 70%;
+    }
+    .footer-section-second-box{
+        width: 30%;
+        position: relative;
+        left: -6rem;
+    }
+    .recent-works-container{
+        width: 360px;
+        height: auto;
+    }
+    .recent-works-info-box{
+        width: 350px;
+    }
+    .recent-works-info-box .recent-work-img-01{
+        width: 14rem;
+    }
+    .recent-work-yellow-uline::after{
+        top: 2rem;
+        width: 25.5%;
+        left: 13.6rem;
+        height: 10%;
+    }
+    .eclipse-svg{
+        width: 20rem;
+        top: 12rem;
     }
 }
 @media(max-width: 482px){
@@ -399,30 +459,10 @@
         height: 24rem;
     }
     .our-works-heading-box h1{
+        position: relative;
+        top: 1rem;
         font-size: 2rem;
         line-height: 2rem;
-    }
-    .our-work-first-info-box{
-        height: 11rem;
-        width: 15rem;
-    }
-    .our-work-first-info-box h2{
-        font-size: 0.8rem;
-    }
-    .our-work-first-info-box p{
-        font-size: 0.8rem;
-    }
-    .our-work-first-info-box svg{
-        width: 1.6rem;
-        padding: 0.3rem;
-    }
-    .carosule-btn-01{
-        right: 8rem;
-        top: -5rem;
-    }
-    .carosule-btn-02{
-        left: 8rem;
-        top: -5rem;
     }
     .testimonials-heading h1{
         font-size: 2.4rem;
@@ -431,105 +471,69 @@
         font-size: 2rem;
         line-height: 2rem;
     }
-    .recent-work-heading p{
-        font-size: 0.8rem;
-        line-height: 1.2rem;
+    .recent-works-container{
+        width: 380px;
+        height: auto;
     }
-    .recent-work-main-box-first-child-box{
-        top: -1rem;
-        width: 360px;
-        height: 17rem;
-        right: 1rem;
+    .recent-works-info-box{
+        width: 300px;
     }
-    .recent-work-01-web{
-        width: 12rem;
-        height: 12rem;
-    }
-    .recent-work-01-mobile{
-        height: 12rem;
-    }
-    .recent-work-main-box-first-child-box h3{
-        top: 1.7rem;
-        font-size: 1.2rem;
-    }
-    .recent-work-main-box-first-child-box button{
-        position: relative;
-        top: -0.2rem;
-        left: 14rem;
-    }
-    .testimonials-heading h1{
-        font-size: 1.7rem;
-        line-height: 1.8rem;
-    }
-    .footer-section-first-box h1{
-        text-align: center;
-        font-size: 1.6rem;
-    }
-    .footer-section-first-box p{
-        text-align: center;
-        font-size: 0.6rem;
-    }
-    .footer-section-first-box h3{
-        text-align: center;
-    }
-    .footer-section-first-box input{
+    .recent-works-info-box .recent-work-img-01{
         width: 11rem;
     }
-    .footer-map-img{
-        position: relative;
-        width: 15rem;
-        left: 0.8rem;
-    }
-    .footer-section-first-box input{
-        position: relative;
-        width: 9rem;
-        height: 2.5rem;
-        left: 1.5rem;
-      }
-      .footer-section-first-box button{
-        position: relative;
-        left: 1.5rem;
-        top: -0.01rem;
-        height: 2.5rem;
-        width: 5rem;
-        font-size: 0.9rem;
-      }
-    .main-btns{
-        position: relative;
-        width: 100%;
+    .testimonials-heading h1{
+        font-size: 1.4rem;
+        line-height: 1.5rem;
     }
     #menu-icon{
         position: relative;
-        left: 8.5rem;
     }
-    .recent-work-carosule-btn-01{
-        top: -4rem;
-        left: -2rem;
+    .recent-works-container{
+        width: 300px;
+        height: auto;
     }
-    .recent-work-carosule-btn-02{
-        top: -4rem;
-        left: -2rem;
+    .testimonials-first-child-box,
+    .testimonials-second-child-box{
+        width: auto;
+    }
+    .footer-section-second-box iframe{
+        width: auto;
+        position: relative;
+    }
+    .our-work-yellow-uline::after{
+        top: 2rem;
+        left: 7.5rem;
+      }
+      .-test-sec-yellow-uline::after{
+        left: 12.5rem;
+    } 
+    .recent-work-yellow-uline::after{
+        top: 1.6rem;
+        width: 25.5%;
+        left: 11.6rem;
+        height: 10%;
+    }
+    .eclipse-svg{
+        width: 20rem;
+        top: 3rem;
     }
 }
 @media(max-width: 440px){
     .main-btns{
         position: relative;
-        left: -2rem;
-        top: -0.5rem;
-        display: flex;
-      
-    }
-    .main-btns a{
-        font-size: 1rem;
-        margin-left: 5px;
+        left: -3rem;
     }
     #menu-icon{
        position: relative;
-       left: -0rem;
-       top: -0.2rem;
+       left: -4.5rem;
+    }
+    .recent-work-yellow-uline::after{
+        top: 1.6rem;
+        width: 25.5%;
+        left: 11.6rem;
+        height: 10%;
     }
 }
-
 @media(max-width: 400px){
     .hero-content h1,
     .our-works-heading-box h1,
@@ -541,8 +545,7 @@
         line-height: 1.6rem;
     }
     .hero-content p,
-    .about-content p,
-    .recent-work-heading p{
+    .about-content p{
         font-size: 0.6rem;
         line-height: 0.8rem;
     }
@@ -551,16 +554,11 @@
         width: 7rem;
         height: 2.5rem;
         font-size: 0.8rem;
-        left: 4.8rem;
     }
     .hero-img-01,
     .about-img{
         width: 16rem;
         left: -1rem;
-    }
-    .main-btns{
-        position: relative;
-        width: 100%;
     }
     .main-shape{
         width: 25rem;
@@ -568,11 +566,92 @@
         top: -10rem;
         right: -5.4rem;
     }
-}
-@media(max-width: 370px){
-    .main-btns{
+    .recent-works-container{
+        width: 200px;
+        height: auto;
+    }
+    .testimonials-heading h1{
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+    .footer-section-second-box{
+        width: 30%;
         position: relative;
-        left: -4rem;
-        
+        left: -5rem;
+    }
+    .hero-content .yellow-uline::after{
+        top: 2.4rem;
+        left: 1.8rem;
+      }
+      .our-work-yellow-uline::after{
+        top: 1.5rem;
+        left: 6rem;
+      }
+      .about-yellow-uline::after{
+        top: 1.6rem;
+        left: 5.6rem;
+    }
+    .-test-sec-yellow-uline::after{
+        left: 11rem;
+    } 
+    .main-shape{
+        width: 26.5rem;
+        height: 42rem;
+        top: -15.2rem;
+        right: -5.4rem;
+    }
+    .recent-works-container{
+        width: 300px;
+        height: auto;
+    }
+    .recent-works-info-box{
+        width: 300px;
+    }
+    .recent-works-info-box .recent-work-img-01{
+        width: 11rem;
+    }
+    .recent-work-yellow-uline::after{
+        top: 1rem;
+        width: 25%;
+        left: 10.6rem;
+        height: 10%;
+    }
+}
+@media(max-width: 386px){
+    .main-btns button{
+        position: relative;
+        margin-inline: 0.2rem;
+        left: -5rem;
+    }
+    .footer-section-first-box{
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-section-first-box h1{
+        font-size: 1rem;
+    }
+    .footer-section-first-box p{
+        font-size: 0.8rem;
+    }
+    .footer-section-first-box input{
+        width: 12rem;
+    }
+    .footer-section-first-box button{
+        width: 5rem;
+    }
+    .footer-section-second-box{
+        width: 10%;
+        left: -8.3rem;
+        position: relative;
+    }
+    .footer-section-second-box iframe{
+        width: auto;
+        position: relative;
+    }
+    .recent-work-yellow-uline::after{
+        top: 1rem;
+        width: 25.5%;
+        left: 9rem;
+        height: 10%;
     }
 }

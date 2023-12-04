@@ -1,0 +1,134 @@
+#recent-works-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #f53c034d;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90.5%;
+    top: 28rem;
+    left: 10%;
+    border-radius: 400px 0 0 0;
+    height: auto;
+}
+.recent-work-heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 95%;
+  padding: 1rem;
+}
+.recent-work-heading h2{
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 51px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #331B3B;
+}
+.recent-work-heading h2 b{
+    font-weight: 700;
+}
+.recent-work-heading p{
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #331B3B;
+  width: 43%;
+  padding-top: 2rem;
+}
+.recent-works-container{
+    width: 910px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    margin-left: 8rem;
+}
+.recent-works-container::-webkit-scrollbar{
+   display: none;
+}
+.recent-works-child-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: auto;
+    flex: none;
+    gap: 1rem;
+}
+.recent-works-info-box{
+    width: 417px;
+    height: auto;
+    padding: 1rem 0.7rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 9px 2px #0000000D;
+    border-radius: 10px;
+}
+.recent-works-info-box .img-box{
+    display: flex;
+    justify-content: space-between;
+}
+.recent-works-info-box .btns-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recent-works-info-box .btns-box h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #331B3B;
+    padding-left: 1rem;
+}
+.recent-works-info-box .btns-box button{
+    width: 92px;
+    height: 23px;
+    border-radius: 100px;
+    border: solid #343434 1px;
+    cursor: pointer;
+    transition: .6s;
+}
+.recent-works-info-box .btns-box button:hover{
+    border: 1px solid #00000054;
+}
+.carousel-btn-box{
+    position: relative;
+    display: flex;
+    padding-left: 2rem;
+    gap: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+.carousel-btn-box button{
+    border-radius: 50%;
+    background-color: transparent;
+    width: 35px;
+    height: 34px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    transition: .6s;
+}
+.carousel-btn-box button:hover{
+    border: 2px solid #00000054;
+}
+.carousel-btn-box #recent-work-next-btn svg{
+   position: relative;
+   top: 0.1rem;
+   left: 0.1rem;
+}
+.carousel-btn-box button svg:hover{
+    stroke-opacity: 0.33
+}
+.carousel-btn-box #recent-work-previous-btn svg{
+    position: relative;
+    top: 0.1rem;
+    right: 0.1rem;
+ }
